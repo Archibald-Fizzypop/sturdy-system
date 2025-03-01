@@ -13,8 +13,11 @@ dnf config-manager addrepo --from-repofile=https://repository.mullvad.net/rpm/st
 
 dnf install -y mullvad-browser
 
-wget https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
-dnf install -y ./Filen_linux_x86_64.rpm
+wget https://mega.nz/linux/repo/Fedora_41/x86_64/megasync-Fedora_41.x86_64.rpm 
+dnf install -y "$PWD/megasync-Fedora_41.x86_64.rpm"
+
+wget https://mega.nz/linux/repo/Fedora_41/x86_64/nautilus-megasync-Fedora_41.x86_64.rpm
+dnf install -y "$PWD/nautilus-megasync-Fedora_41.x86_64.rpm"
 
 # Use a COPR Example:
 #
