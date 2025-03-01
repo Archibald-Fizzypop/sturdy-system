@@ -13,6 +13,9 @@ dnf config-manager addrepo --from-repofile=https://repository.mullvad.net/rpm/st
 
 dnf install -y mullvad-browser
 
+wget https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_x86_64.rpm
+dnf install -y ./Filen_linux_x86_64.rpm
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
