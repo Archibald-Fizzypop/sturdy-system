@@ -10,11 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 dnf config-manager addrepo --from-repofile=https://repository.mullvad.net/rpm/stable/mullvad.repo
-
 dnf install -y mullvad-browser
-
-wget https://mega.nz/linux/repo/Fedora_41/x86_64/nautilus-megasync-Fedora_41.x86_64.rpm
-dnf install -y "$PWD/nautilus-megasync-Fedora_41.x86_64.rpm"
 
 # Use a COPR Example:
 #
