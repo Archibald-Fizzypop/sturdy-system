@@ -12,8 +12,6 @@ set -ouex pipefail
 dnf config-manager addrepo --from-repofile=https://repository.mullvad.net/rpm/stable/mullvad.repo
 dnf install -y mullvad-browser
 
-dnf install -y flameshot
-
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
