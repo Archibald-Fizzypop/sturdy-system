@@ -12,6 +12,10 @@ set -ouex pipefail
 dnf config-manager addrepo --from-repofile=https://repository.mullvad.net/rpm/stable/mullvad.repo
 dnf install -y mullvad-browser
 
+wget https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.2-beta/freetube-0.23.2.amd64.rpm
+
+dnf install -y ./freetube-0.23.2.amd64.rpm
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
